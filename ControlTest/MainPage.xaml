@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="ControlTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ControlTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical">
+            <ProgressBar  MaxWidth="300" Value="50" CanDrag="False" ToolTipService.ToolTip="Tool Temp" Name="ToolTemp"></ProgressBar>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="20,0,0,0"> T Tool </TextBlock>
+                <TextBox Text="103" Margin="20,0,0,0" IsColorFontEnabled="True" BorderBrush="Red" BorderThickness="4"></TextBox>
+            </StackPanel>
+            <Button Content="Display tool temp here" Name="ToolTempButton" Click="Clicked"></Button>
+            <Slider Header="this is a slider"></Slider>
+            <ComboBox Name="RunningMode" Header="Select running mode here"  HorizontalAlignment="Stretch" SelectionChanged="CheckSelection"> 
+                <ComboBoxItem Content="Idle"></ComboBoxItem>
+                <ComboBoxItem Content="Running mode 2"></ComboBoxItem>
+                <ComboBoxItem Content="Running mode 3"></ComboBoxItem>
+            </ComboBox>
+     
+        </StackPanel>
+      
+     
+
+    </Grid>
+</Page>
